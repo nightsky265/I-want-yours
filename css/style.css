@@ -3,6 +3,20 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	font-size: 1rem;
+	background-color: 		#DFFFDF;
+/*	background-image:  url("/img/icon.png");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:scroll;
+	background-position:bottom 0%;
+/*	background-position:50%;*/
+	
+/*	 ,url("/img/bg.jpg")*/
+}
+
+
+h2 {
+	text-align: center;
 }
 
 /*
@@ -11,67 +25,67 @@ header
 -------------------------
 */
 
-.header {
-	padding-top: 5px;
-	width: 100%;
-	height: 600px;
-	background-color: #272727;
-}
-
-.header-title {
-	width: 100%;
-	color: white;
-	text-align: center;
-	letter-spacing: 8px;
-}
-
 .header-title-sub {
-	text-align: center;
-	font-size: 2.2rem;
+	background-image: linear-gradient(to right, red, #005AB5, yellow, 	#009100, yellow, #005AB5, red, #005AB5, yellow, 	#009100, yellow, #005AB5, red);
+    -webkit-background-clip: text;
+    animation: move 5s infinite;
+    color: transparent;
+    width: 300px;
 }
 
 .header-title-sub::before,
 .header-title-sub::after {
 	content: '';
 	display: inline-block;
-	width: 90px;
+	width: 45px;
 	height: 2px;
-	margin: 0 30px;
-	background-color: #000;
+	margin: 0 10px;
+	background-color: white;
 	vertical-align: middle;
 }
 
 .global-nav {
 	height: 50px;
-	padding-top: 20px;
+	/*	width: 190px;*/
+	padding-top: 2px;
 	text-align: center;
-	background-color: #ededed;
 }
 
 .global-nav .nav-item {
 	display: inline-block;
 	margin: 0 10px;
+	margin-bottom: 10px;
 }
 
 .global-nav .nav-item a {
 	display: inline-block;
 	width: 150px;
-	height: 30px;
+	height: 40px;
+	padding: 5px;
 	line-height: 30px;
 	text-align: center;
 	border-radius: 8px;
 	color: #666;
-	font-size: 1.6rem;
+	font-size: 1.5em;
 	letter-spacing: 1px;
 	transition: 0.15s;
+	text-decoration: none;
 }
 
 .global-nav .nav-item.active a,
 .global-nav .nav-item a:hover {
-	background-color: #d03c56;
+	background-color: #46A3FF;
 	color: #fff;
 }
 
+@keyframes move {
+	0% { 
+		background-position: 0 0;
+	}   
+	100% { 
+		background-position: -300px 0;  
+	}
+}
 /*
 -------------------------
 about
@@ -79,12 +93,14 @@ about
 */
 
 .about {
-	height: 900px;
-	margin: 5px 200px 5px;
-	padding: 40px 30px;
+	height: 600px;
+	margin: 10px 20px 20px 280px;
+	padding: 40px 50px;
 	color: #333;
-	background-color: bla;
+	background-color: white;
 	text-align: center;
+	box-shadow:-3px 3px 20px gray;
+/*	-webkit-filter:blur(1px);*/
 }
 
 .about-title {
@@ -146,53 +162,6 @@ location
 
 .location-title::before {
 	bottom: 5px;
-}
-
-/*
--------------------------
-footer
--------------------------
-*/
-
-.footer {
-	width: 100%;
-	bottom: 0x;
-	padding: 20px 0 30px;
-	color: #bbb;
-	margin-left: 240px;
-	background-color: #272727;
-}
-
-.horizontal-list {
-	margin-right: 50px;
-	text-align: right;
-	font-size: 0;
-}
-
-.horizontal-list .horizontal-item {
-	display: inline-block;
-	padding: 0 15px;
-	letter-spacing: 1px;
-}
-
-.horizontal-list .horizontal-item + .horizontal-item {
-	border-left: 1px solid #bbb;
-}
-
-.horizontal-list .horizontal-item a {
-	color: #bbb;
-	font-size: 1.1rem;
-	transition: 0.15s;
-}
-
-.horizontal-list .horizontal-item a:hover {
-	color: #ddd;
-}
-
-.copyright {
-	margin-top: 30px;
-	text-align: center;
-	letter-spacing: 1px;
 }
 
 /*
@@ -285,19 +254,65 @@ contact
 	letter-spacing: 2px;
 }
 
+/*
+-------------------------
+footer
+-------------------------
+*/
+
+.footer {
+	width: 100%;
+	bottom: 0x;
+	padding: 20px 0 20px;
+	color: #bbb;
+	background-color: #272727;
+}
+
+.horizontal-list {
+	margin-right: 50px;
+	text-align: right;
+	font-size: 0;
+}
+
+.horizontal-list .horizontal-item {
+	display: inline-block;
+	padding: 0 15px;
+	letter-spacing: 1px;
+}
+
+.horizontal-list .horizontal-item + .horizontal-item {
+	border-left: 1px solid #bbb;
+}
+
+.horizontal-list .horizontal-item a {
+	color: #bbb;
+	font-size: 1.1rem;
+	transition: 0.15s;
+}
+
+.horizontal-list .horizontal-item a:hover {
+	color: #ddd;
+}
+
+.copyright {
+	margin-top: 30px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
 #leftMenu {
 	height: 100%;
-	width: 160px;
+	width: 260px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	color: white;
-	background-color: #111;
+	background-color: #FFAF60;
 	overflow-x: hidden;
 	padding-top: 20px;
 }
-
+/*#4D0000*/
 .menuBtn {
 	width: 180px;
 	margin: 10px 0;
