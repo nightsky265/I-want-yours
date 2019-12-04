@@ -3,8 +3,8 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	font-size: 1rem;
-/*	background-color:  	#FFDCB9;*/
-		background-image:  url("/img/bg.jpg");
+	background-color: #FFBB77;
+/*	background-image:  url("/img/bg.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:scroll;
@@ -75,7 +75,7 @@ header
 
 .global-nav .nav-item.active a,
 .global-nav .nav-item a:hover {
-	background-color: #46A3FF;
+	background-color: #c1ffda96;
 	color: #fff;
 }
 
@@ -308,14 +308,14 @@ footer
 }
 
 #leftMenu {
-	height: 100%;
+	height: 80%;
 	width: 260px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	color: white;
-	background-color: #FFAF60;
+/*	background-color: #FFAF60;*/
 	overflow-x: hidden;
 	padding-top: 20px;
 }
