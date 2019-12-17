@@ -9,6 +9,9 @@ body {
 	background-size: cover;
 	background-attachment:scroll;
 	background-position:bottom 0%;
+
+
+
 }
 
 h2 {
@@ -71,7 +74,7 @@ header
 
 .global-nav .nav-item.active a,
 .global-nav .nav-item a:hover {
-	background-color: 	#5599FF;
+	background-color:#5599FF;
 	color: #fff;
 }
 
@@ -89,8 +92,9 @@ about
 -------------------------
 */
 
-.about {
-	height: 600px;
+
+.aboutStat {
+	height: 1200px;
 	margin: 10px 20px 20px 280px;
 /*	padding: 40px 50px;*/
 	color: #333;
