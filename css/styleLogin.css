@@ -1,31 +1,41 @@
 .aboutlog {
-	height: 550px;
-    width: 1000px;
-	margin: 0px 100px 20px 440px;
+	height: 500px;
+    width: 900px;
+	margin: 0px 100px 10px 420px;
 	color: #333;
-	background-color: #FFFFFF;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border: 2px gray solid; 
+	background-color: #FFC8B4;
+	border-top-right-radius: 100px ;
+	border-top-left-radius: 100px ;     
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+	border: 5px gray solid; 
+    font-family:DFKai-sb;
 }
 .number{
-margin: 100px 100px 20px 50px;
+margin: 100px 0px 90px 100px;
 font-size: 50px;
+
 }
 .Loginbuttun{
-    width: 150px;
+    width: 200px;
 	height: 40px;
     padding: 10px 0px 0px;
     margin: 0px 0px 0px 200px;
+    font-size: 50px;
+    font-family:Microsoft JhengHei;
     color: #666:
     text-align: center;
     float:left;
+    
+
 }
 .setpassword{
-    width: 150px;
+    width: 200px;
 	height: 40px;
     padding: 10px 0px 0px;
     margin: 0px 200px 0px 0px;
+    font-size: 50px;
+    font-family:Microsoft JhengHei;
     color: #666:
     text-align: center;
     float:right;
